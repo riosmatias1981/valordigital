@@ -1,0 +1,51 @@
+<script language="javascript"> 
+function nuevoAjax(){
+var xmlhttp=false;
+ try {
+  xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+ } catch (e) {
+  try {
+   xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+  } catch (E) {
+   xmlhttp = false;
+  }
+ }
+ 
+if (!xmlhttp && typeof XMLHttpRequest!='undefined') {
+  xmlhttp = new XMLHttpRequest();
+}
+return xmlhttp;
+}
+function cargarContenido(){
+var contenedor;
+contenedor = document.getElementById('contenedor');
+ajax=nuevoAjax();
+ajax.open("GET", "valormailer/soporte/index-55.htm",true);
+ajax.onreadystatechange=function() {
+if (ajax.readyState==4) {
+contenedor.innerHTML = ajax.responseText
+}
+}
+ajax.send(null)
+}
+window.onload= function(){cargarContenido()}
+</script> 
+
+<style type="text/css">
+<!--
+#contenedor {border: 1px solid #fff;
+padding: 10px;
+margin: 14px;
+}
+-->
+</style>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="32">&nbsp;</td>
+    <td valign="top"><p class="titulos">Soporte Valor Mailer</p>
+      <div id="contenedor">div contenedor</div>
+    <p>&nbsp;</p></td>
+    <td width="167" align="center" valign="top"><img src="media/img_globo.jpg" alt="Valor Fest" width="129" height="143" class="img_derecha" /></td>
+  </tr>
+</table>

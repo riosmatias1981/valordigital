@@ -1,0 +1,90 @@
+<script language="JavaScript" type="text/JavaScript">
+
+function validarEmail(valor) {
+  if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(valor))
+  {
+    return 1;
+  } 
+  else
+  {
+      return 0;
+  }
+}
+
+function enviar()
+{
+	
+	if(document.forms.datos.nombre.value==""  || document.forms.datos.email.value=="" || document.forms.datos.asunto.value=="" || document.forms.datos.consulta.value=="")
+	{
+		alert ("Complete los datos requeridos.");
+	}
+	else
+	{
+			if(document.forms.datos.email.value=="")
+			{
+				document.forms.datos.submit();				
+			}
+			else
+			{
+				var mail=0;
+				mail=validarEmail(document.forms.datos.email.value);
+				if(mail==1)
+				{
+					document.forms.datos.submit();				
+				}
+				else
+				{
+					alert ("El email ingresado no es correcto.");
+				}
+			}
+
+	}
+}
+</script>
+<link href="../estilos.css" rel="stylesheet" type="text/css" />
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="32">&nbsp;</td>
+    <td valign="top"><p class="titulos">Contáctenos
+      </p>
+      <form action="php/mail.php" method="post" name="datos" id="datos">
+        <p>&nbsp;</p>
+        <table border="0" align="center" cellpadding="2" cellspacing="0">
+          <tr>
+            <td align="right" valign="top"><b>Nombre:</b></td>
+            <td><input name="nombre" type="text" class="formulario" size="20" /></td>
+          </tr>
+          <tr>
+            <td align="right" valign="top"><b>E-mail:</b></td>
+            <td><input name="email" type="text" class="formulario" id="email" size="20" /></td>
+          </tr>
+          <tr>
+            <td align="right" valign="top"><b>Telefono:</b></td>
+            <td><input name="telefonos" type="text" class="formulario" id="telefonos" size="20" /></td>
+          </tr>
+          <tr>
+            <td align="right" valign="top"><b>Asunto:</b></td>
+            <td><input name="asunto" type="text" class="formulario" id="asunto" size="20" /></td>
+          </tr>
+          <tr>
+            <td align="right" valign="top"><b>Mensaje:</b></td>
+            <td><textarea name="consulta" cols="20" rows="4" class="formulario" id="consulta"></textarea></td>
+          </tr>
+          <tr>
+            <td valign="top">&nbsp;</td>
+            <td><table border="0" align="right" cellpadding="2" cellspacing="0">
+              <tr>
+                <td><input name="Submit" type="button" class="botones" onclick="enviar();" value="Enviar" /></td>
+                <td><input name="Submit2" type="reset" class="botones" value="Limpiar" /></td>
+              </tr>
+            </table></td>
+          </tr>
+        </table>
+      </form>
+      <p>&nbsp;</p>
+    <p>&nbsp;</p></td>
+    <td width="167" align="center" valign="top"><img src="media/img_globo.jpg" alt="Valor Fest" width="129" height="143" class="img_derecha" /></p>
+     </p><!-- Facebook Badge START --><a href="http://www.facebook.com/pages/Valor-Digital/113320402016853" title="Valor Digital" target="_TOP"><img src="http://badge.facebook.com/badge/113320402016853.1655.274025262.png" width="120" height="107" style="border: 0px;" /></a><!-- Facebook Badge END --></td>
+  </tr>
+</table>

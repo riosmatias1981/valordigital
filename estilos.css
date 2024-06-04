@@ -1,0 +1,200 @@
+.fondo_texto {
+	background: url(media/img_fondo_collage.jpg) repeat-y;
+}
+.link_portfolio {
+	color: #B65914;
+	text-decoration: none;
+	text-align: right;
+	display: block;
+	width:100%;
+	border-top-width: 1px;
+	border-top-style: dashed;
+	border-top-color: #F90;
+	margin-top: 5px;
+}
+.link_portfolio:hover {
+	text-decoration: underline;
+}
+.link_servicios {
+	color: #4A7120;
+	text-decoration: none;
+	text-align: right;
+	display: block;
+	width:90%;
+	border-top-width: 1px;
+	border-top-style: dashed;
+	border-top-color: #4A7120;
+	margin-top: 5px;
+}
+.link_servicios:hover {
+	text-decoration: underline;
+}
+
+body {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #666;
+	background-attachment: scroll;
+	background-color: #131522;
+	background-image: url(media/img_fondo.jpg);
+	background-repeat: repeat;
+	background-position: center top;
+}
+.pie {
+	font-size: 12px;
+	color: #333;
+	border-top: 1px solid #AACE2D;
+	text-align: center;
+	padding-right: 15px;
+	padding-left: 15px;
+	font-family: Arial, Helvetica, sans-serif;
+	padding-top: 5px;
+}
+.img_derecha {
+	border: 4px solid #BFD9EE;
+}.boton_menu {
+	color: #FF9900;
+	width: 81px;
+	height: 34px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+	display: block;
+	text-align: center;
+	padding-top: 7px;
+}
+.boton_menu:hover {
+	color: #fff;
+	background: url(media/bot_menu_fondo.jpg) no-repeat;
+}
+.texto {
+	width: 470px;
+	padding-right: 5px;
+	padding-left: 5px;
+	text-align: left;
+}
+
+.boton_menu_activo {
+	color: #004C91;
+	width: 81px;
+	height: 34px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+	display: block;
+	text-align: center;
+	padding-top: 7px;
+	background: url(media/bot_menu_fondo.jpg) no-repeat;
+}
+
+.boton_verde {
+	color: #004C91;
+	width: 81px;
+	height: 34px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+	display: block;
+	text-align: center;
+	padding-top: 7px;
+	background: url(media/bot_menu_fondo.jpg) no-repeat;
+}
+.boton_verde:hover {
+color: #FF9900;
+	width: 81px;
+	height: 34px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+	display: block;
+	text-align: center;
+	padding-top: 7px;
+}
+.formulario {
+	font-size: 11px;
+	color: #8F1A1C;
+	width: 300px;
+	border: 1px solid #CCC;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.formulario_newsletter {
+	font-size: 11px;
+	color: #8F1A1C;
+	width: 100px;
+	border: 1px solid #CCC;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.botones {
+	background-color: #8F1A1C;
+	color: #FFF;
+	padding-top: 2px;
+	padding-right: 4px;
+	padding-bottom: 2px;
+	padding-left: 4px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	font-size: 11px;
+}.titulos {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFF;
+	background: url(media/tit_generico.jpg) no-repeat;
+	display: block;
+	height: 31px;
+	width: 517px;
+	padding-top: 7px;
+	padding-left: 20px;
+}
+.subtitulo {
+	font-size: 14px;
+	font-weight: bold;
+	color: #004C90;
+	padding-bottom: 3px;
+	padding-left: 10px;
+	display: block;
+	width: 100%;
+	border-bottom: 2px solid #F90;
+	background: #F8F8F8;
+	padding-top: 5px;
+	border-top: 1px dotted #F90;
+}
+.ancho_portfolio {
+	width: 90%;
+}
+
+.borde_blanco {
+	border: 4px solid #131522;
+}
+.img_derecha_contacto {
+	border: 4px solid #B2B2B2;
+}
+.img_derecha_portfolio {
+	border: 4px solid #5C0100;
+}
+.img_derecha_somos {
+	border: 4px solid #004A00;
+}
+.img_derecha_home {
+	border: 4px solid #011749;
+}
+.subtitulo_newsletter {
+	font-size: 14px;
+	font-weight: bold;
+	color: #004C90;
+	padding-bottom: 3px;
+	padding-left: 10px;
+	display: block;
+	width: 90%;
+	border-bottom: 2px solid #F90;
+	background: #F8F8F8;
+	padding-top: 5px;
+	border-top: 1px dotted #F90;
+}
+S
